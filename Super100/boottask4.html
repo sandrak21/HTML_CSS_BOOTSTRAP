@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .btn-red {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5" style="max-width: 500px;">
+  <form class="needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control is-invalid" id="name" required>
+      <div class="invalid-feedback">
+        Name is required
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control is-invalid" id="email" required>
+      <div class="invalid-feedback">
+        Email is required
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control is-invalid" id="password" required>
+      <div class="invalid-feedback">
+        Password is required
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="hobbies" class="form-label">Hobbies</label>
+      <select class="form-select" id="hobbies" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Reading</option>
+        <option>Sports</option>
+        <option>Traveling</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-red w-100">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
